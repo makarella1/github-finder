@@ -1,8 +1,6 @@
 class GitHub {
-  constructor() {
-    this.repos_count = 10;
-    this.repos_sort = 'created: asc';
-  }
+  repos_count = 10;
+  repos_sort = 'created: asc';
 
   async getUser(user) {
     const profileResponse = await fetch(`https://api.github.com/users/${user}`);
